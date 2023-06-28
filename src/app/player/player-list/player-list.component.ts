@@ -15,19 +15,19 @@ export class PlayerListComponent implements OnInit {
       id: '0',
       name: 'Dayo Odeyingbo',
       position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.pro-football-reference.com/players/O/OdeyDa00.htm',
     },
     {
       id: '1',
       name: 'Zaire Franklin',
       position: 'LB',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.pro-football-reference.com/players/F/FranZa00.htm',
     },
     {
       id: '2',
       name: 'Grover Stewart',
       position: 'CB',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.pro-football-reference.com/players/S/StewGr00.htm',
     },
   ];
   tops = [
@@ -35,13 +35,13 @@ export class PlayerListComponent implements OnInit {
       id: '0',
       name: 'Jonathan Taylor',
       position: 'RB',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.pro-football-reference.com/players/T/TaylJo02.htm',
     },
     {
       id: '1',
       name: 'Yannick Ngakoue',
       position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.pro-football-reference.com/players/N/NgakYa00.htm',
     },
     {
       id: '2',
@@ -55,19 +55,21 @@ export class PlayerListComponent implements OnInit {
       id: '0',
       name: 'Anthony Richardson',
       position: 'QB',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink:
+        'https://www.sports-reference.com/cfb/players/anthony-richardson-2.html',
     },
     {
       id: '1',
       name: 'Josh Downs',
       position: 'WR',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.sports-reference.com/cfb/players/josh-downs-2.html',
     },
     {
       id: '2',
       name: 'Julius Brents',
       position: 'CB',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink:
+        'https://www.sports-reference.com/cfb/players/julius-brents-1.html',
     },
   ];
   displayedColumns = ['Name', 'Position', 'Plink'];

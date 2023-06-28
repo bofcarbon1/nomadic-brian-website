@@ -1,57 +1,78 @@
 <mat-toolbar class="mat-toolbar">
-   <mat-toolbar-row>
-     My Work:&nbsp;&nbsp;
-       <div style="border: 1px solid whitesmoke ">
-         <a routerLink="/home">&nbsp;Site-Home&nbsp;</a>
-         <a routerLink="/skill">&nbsp;Skills&nbsp;</a>
-         <a routerLink="/project">&nbsp;Project-History&nbsp;</a>
-       </div>
-   </mat-toolbar-row>
+  <mat-toolbar-row>
+    My Work:&nbsp;&nbsp;
+    <div style="border: 1px solid whitesmoke">
+      <a routerLink="/home">&nbsp;Site-Home&nbsp;</a>
+      <a routerLink="/skill">&nbsp;Skills&nbsp;</a>
+      <a routerLink="/project">&nbsp;Project-History&nbsp;</a>
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>
 <div flex layout="row">
   <div layout="column" flex>
     <div class="box1">
       <span>
-        <p>Providing web apps, services & database feature development for various businesses.</p>
         <p>
-          <br/>
+          Providing web apps, services & database feature development for
+          various businesses.
+        </p>
+        <p>
+          <br />
           <strong>Check out my pro links: </strong>
-            <ng-template  ngFor let-sitelink [ngForOf]="sitelinks">
-               <a href={{sitelink.sitelink}}>{{sitelink.sitename}} &nbsp; </a>
-            </ng-template>
+          <ng-template ngFor let-sitelink [ngForOf]="sitelinks">
+            <a href="{{ sitelink.sitelink }}"
+              >{{ sitelink.sitename }} &nbsp;
+            </a>
+          </ng-template>
         </p>
       </span>
       <span>
-        <p><span type='tel'>{{phone}}</span></p>
-        <p>{{email}}</p>
+        <p>
+          <span type="tel">{{ phone }}</span>
+        </p>
+        <p>{{ email }}</p>
       </span>
-       <img class="main-img" mat-card-image src="../../assets/images/dilbert.png" />
+      <img
+        class="main-img"
+        mat-card-image
+        src="../../assets/images/dilbert.png"
+      />
     </div>
     <div class="box2">
-      <mat-card class="mat-card" flex="100" layout-margin layout-padding layout-align="center stretch" >
+      <mat-card
+        class="mat-card"
+        flex="100"
+        layout-margin
+        layout-padding
+        layout-align="center stretch"
+      >
         <mat-card-header>
           <div mat-card-avatar class="example-header-image">
-            <img class="avatar-img" src="../../assets/images/robot.jfif">
+            <img class="avatar-img" src="../../assets/images/robot.jfif" />
           </div>
           <mat-card-title>Current Work</mat-card-title>
           <mat-card-subtitle>API & Microservices Focus</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          <img class="small-img" mat-card-image src="../../assets/images/thecode.jfif" />
-          <p>Building apps with microservices with FastAPI & Python.
-              IDE tools PyCharm, VS Code.
-             <br/><br/><br/>
-             Project: Converting Colts By Numbers Python to FastAPI & Microservices
-             <br/><br/>
-             Includes Rabbit MQ/Kafka message driven events, Numpy/Panda/Matplolib/SVG image,
-             <br/><br/>
-             Postgres DB, OpenAPI, VS Code and possible deploy to OpenShift.
+          <img
+            class="small-img"
+            mat-card-image
+            src="../../assets/images/thecode.jfif"
+          />
+          <p style="color: white">
+            Building apps with microservices with FastAPI & Python. IDE tools
+            PyCharm, VS Code. <br /><br /><br />
+            Project: Converting Colts By Numbers Python to FastAPI &
+            Microservices
+            <br /><br />
+            Includes Kafka message driven events, Numpy/Panda/Matplolib/SVG
+            image,
+            <br /><br />
+            MongoDB, OpenAPI, VS Code. Upgrade web UI to Angular v15.
           </p>
         </mat-card-content>
-       </mat-card>
-     </div>
-     <div class="box3">
-       All rights reserved Brian Quinn
-     </div>
-   </div>
- </div>
+      </mat-card>
+    </div>
+    <div class="box3">All rights reserved Brian Quinn</div>
+  </div>
+</div>
