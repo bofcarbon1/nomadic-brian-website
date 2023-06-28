@@ -1,0 +1,80 @@
+<mat-toolbar class="mat-toolbar">
+    <mat-toolbar-row>
+      Colts By Numbers:&nbsp;&nbsp;
+      <div style="border: 1px solid whitesmoke ">
+        <a routerLink="/home-colts">&nbsp;Colts-Home&nbsp;</a>
+        <a routerLink="/player">&nbsp;Players&nbsp;</a>
+        <a routerLink="/team/offense">&nbsp;Team-Offensive&nbsp;</a>
+        <a routerLink="/team/defense">&nbsp;Team-Defensive&nbsp;</a>
+      </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div flex class="row" layout="row">
+    <div layout="column" flex>
+        <div class="box1">
+            <mat-tab-group headerPosition="below">
+              <mat-tab style="width: 1500px" class="myTab" label="Team Trending">
+                <div class="myTabContent">
+                  <h3>Team Numbers Trending:</h3>
+                  <p>
+                    30th... in offensive points scored (PFR)
+                    <br/>
+                    27th... in offensive total yards (PFR)
+                    <br/>
+                  </p>
+                </div>
+              </mat-tab>
+              <mat-tab label="Team Stats">
+                <div class="myTabContent">
+                  <h3>Team Stats Notes</h3>
+                  <p>
+                    32nd... in offensive turnovers given up (PFR)
+                    <br/>
+                    30th... in offensive rushing TDs (PFR)
+                    <br/>
+                  </p>
+                </div>
+              </mat-tab>
+              <mat-tab label="Team Bonus">
+                <div flex="100" class="myTabContent">
+                  <h3>Bonus Stat</h3>
+                  <p>
+                    4th... in 2023 NFL draft order
+                    <br/>
+                    3... possible QB options are Bryce, Willis & Stroud
+                    <br/>
+                  </p>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+        </div>
+        <div class="box2">
+          <div class="container">
+            <h3>&nbsp;&nbsp;Team Ratings & Rankings</h3>
+            <p>
+              #32...power ranking. The Colts were dead last in all of the NFL. (NFL.com).
+              <br/><br/>
+              In the AFC South Colts were 2nd in passing and were 3rd in rushing in 2022...
+            </p>
+            <div style="width: 100%; height: 600px; align-content: center; text-align:center;margin:0; padding:0;">
+              <ng-image-slider #nav
+                [images]="imageObject"
+                [imageSize]="{width: '40%', height: 250}"
+                [infinite]="false"
+                [autoSlide]="1"
+                slideImage="1"
+              >
+              </ng-image-slider>
+            </div>
+          </div>
+        </div>
+        <div class="box3">
+          All rights reserved Brian Quinn
+        </div>
+    </div>
+  </div>
+
+
+
+
+

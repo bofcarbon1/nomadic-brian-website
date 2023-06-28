@@ -1,0 +1,160 @@
+<mat-toolbar class="mat-toolbar">
+  <mat-toolbar-row>
+    Colts By Numbers:&nbsp;&nbsp;
+    <div style="border: 1px solid whitesmoke">
+      <a routerLink="/home-colts">&nbsp;Colts-Home&nbsp;</a>
+      <a routerLink="/team">&nbsp;Team&nbsp;</a>
+      <a routerLink="/player/offense">&nbsp;Player-Offense&nbsp;</a>
+      <a routerLink="/player/defense">&nbsp;Player-Defense&nbsp;</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div flex layout="row">
+  <div layout="column" flex>
+    <div class="box1">
+      <div class="container">
+        <h3>&nbsp;&nbsp;Players To Watch</h3>
+        <mat-table #table [dataSource]="players">
+          <ng-container matColumnDef="Name">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let tops">{{ tops.name }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="Position">
+            <mat-header-cell *matHeaderCellDef> Pos </mat-header-cell>
+            <mat-cell *matCellDef="let tops">{{ tops.position }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="Plink">
+            <mat-header-cell *matHeaderCellDef> Link </mat-header-cell>
+            <mat-cell *matCellDef="let tops">
+                <a  mat-stroked-button href="{{ tops.plink }}" target="_blank">PFR</a>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+      </div>
+      <div class="contaner">
+        <mat-card
+          flex="100"
+          layout-margin
+          layout-padding
+          layout-align="center stretch"
+        >
+          <img
+            class="main-img"
+            mat-card-image
+            style="width: 200px; height: 200px"
+            src="../../assets/images/dleonard.jpg"
+          />
+        </mat-card>
+      </div>
+      <div class="container">
+        <h3>&nbsp;&nbsp;Top Numbers</h3>
+        <mat-table #table [dataSource]="tops">
+          <ng-container matColumnDef="Name">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let tops">{{ tops.name }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="Position">
+            <mat-header-cell *matHeaderCellDef> Pos </mat-header-cell>
+            <mat-cell *matCellDef="let tops">{{ tops.position }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="Plink">
+            <mat-header-cell *matHeaderCellDef> Link </mat-header-cell>
+            <mat-cell *matCellDef="let tops">
+                <a mat-stroked-button href="{{ tops.plink }}" target="_blank">PFR</a>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+      </div>
+      <div class="container">
+        <mat-card
+          flex="100"
+          layout-margin
+          layout-padding
+          layout-align="center stretch"
+        >
+          <img
+            class="main-img"
+            mat-card-image
+            style="width: 200px; height: 200px"
+            src="../../assets/images/qnelson.jpg"
+          />
+        </mat-card>
+      </div>
+      <div class="container">
+        <h3>&nbsp;&nbsp;Rookie Watch</h3>
+        <mat-table #table [dataSource]="rookies" class="mat-elevation-z14">
+          <ng-container matColumnDef="Name">
+            <mat-header-cell *matHeaderCellDef>Name </mat-header-cell>
+            <mat-cell *matCellDef="let rookies">{{ rookies.name }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="Position">
+            <mat-header-cell *matHeaderCellDef> Pos </mat-header-cell>
+            <mat-cell *matCellDef="let rookies">{{
+              rookies.position
+            }}</mat-cell>
+          </ng-container>
+          <ng-container matColumnDef="Plink">
+            <mat-header-cell *matHeaderCellDef>Link</mat-header-cell>
+            <mat-cell *matCellDef="let rookies">
+                <a  mat-stroked-button href="{{ rookies.plink }}" target="_blank">PFR</a>
+            </mat-cell>
+          </ng-container>
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="container">
+        <h3>&nbsp;&nbsp;Anthony's Playground</h3>
+        <p>5... QB Anthony Richardson will be tracked for the 2023 season.</p>
+        <ng-image-slider
+          #nav
+          [images]="imageObject"
+          [imageSize]="{ width: '25%', height: 200 }"
+          [infinite]="false"
+          [autoSlide]="1"
+          slideImage="1"
+        >
+        </ng-image-slider>
+      </div>
+      <div class="container">
+        <h3>&nbsp;&nbsp;Players Table</h3>
+        <p>
+          2023...NFL Draft Picks... I think we got an 'A'
+          <br />
+          5... QB Anthony Richardson.
+          <br />
+          1... WR Josh Downs.
+          <br />
+          26... RB Evan Hull.
+          <br />
+          29... CB JuJu Brents
+          <br />
+          30... CB Darius Rush.
+          <br />
+          31... S Daniel Scott
+          <br />
+          40... CB Jaylon Jones
+          <br />
+          73... OT Blake Freeland
+          <br />
+          76... OT Jake Witt
+          <br />
+          86... TE Will Mallory
+          <br />
+          91... DE Titus Leo
+          <br />
+          95... DT Adotemiwa Adebawore
+          <br />
+          <br />
+        </p>
+      </div>
+    </div>
+    <div class="box3">All rights reserved Brian Quinn</div>
+  </div>
+</div>

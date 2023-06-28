@@ -1,0 +1,77 @@
+  <mat-toolbar class="mat-toolbar">
+    <mat-toolbar-row>
+      I Nomadic Brian:&nbsp;&nbsp;
+        <div style="border: 1px solid whitesmoke ">
+          <a routerLink="/home-colts">&nbsp;Colts By Numbers&nbsp;</a>
+          <a routerLink="/work">&nbsp;My Work&nbsp;</a>
+        </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div flex layout="row">
+    <div layout="column" flex>
+      <div class="box1">
+        <mat-tab-group headerPosition="below">
+          <mat-tab class="myTab" label="News">
+            <div class="myTabContent">
+              <h3>What's The Scoop!</h3>
+              <p>
+                This site now runs on heroku cloud Eco.
+                <br/>
+               <!-- <a style="color: black; font-weight: bold;" href="https://www.youtube.com/watch?v=ce13PozKFfg">Colts at 49ers Game 7</a>
+               -->
+              </p>
+            </div>
+          </mat-tab>
+          <mat-tab class="myTab" label="Projects">
+            <div class="myTabContent">
+              <h3>Current work.</h3>
+              <p>
+                Proects: Converting Colts By Numbers Python to FastAPI & Microservices.
+                <br/>
+              </p>
+            </div>
+          </mat-tab>
+          <mat-tab class="myTab" label="About">
+            <div class="myTabContent">
+              <h3>What's Here?</h3>
+              <p>1. Colts By Numbers a fan website I do during football season.
+                <br/>2. My work as an Application Developer that includes skills and projects.
+              </p>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+        <img class="logo-img" mat-card-image src="../../assets/images/bquinn.jpg" />
+      </div>
+      <div class="box2">
+        <mat-card class="mat-card" flex="100" layout-margin layout-padding layout-align="center stretch" >
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image">
+              <img class="avatar-img" src="../../assets/images/robot.jfif">
+            </div>
+            <mat-card-title>My World</mat-card-title>
+            <mat-card-subtitle>Arts  - Sports - Mind</mat-card-subtitle>
+            <p>Film Noir & Musicals, Music of the 1920s, 30s, 40s, Existentialists,
+              Technology, Sports and Social Media
+            </p>
+          </mat-card-header>
+          <mat-card-content>
+            <img class="main-img" mat-card-image src="../../assets/images/filmnoir.jfif" />
+            <img class="main-img" mat-card-image src="../../assets/images/anamerinparis.jfif" />
+            <img class="main-img" mat-card-image src="../../assets/images/dali.jfif" />
+            <br/>
+            <img class="main-img" mat-card-image src="../../assets/images/ai3.jfif" />
+            <img class="main-img" mat-card-image src="../../assets/images/coltslogo2.png" />
+            <img class="main-img" mat-card-image src="../../assets/images/orioles2.jfif" />
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="box3">
+        All rights reserved Brian Quinn
+      </div>
+    </div>
+  </div>
+
+
+
+
+
