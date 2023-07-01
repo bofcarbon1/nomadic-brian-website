@@ -23,7 +23,10 @@ p {
   width: 20%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
   height: 50%;
   margin: 1%;
-  padding: .5%;
+  border-radius: 5px 5px 5px 5px;
+  border-color: black;
+  border: 7px solid black;
+  padding: 1% black;
 }
 
 .small-img{
@@ -31,7 +34,10 @@ p {
   width: 15%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
   height: 25%;
   margin: 1%;
-  padding: .5%;
+  border-radius: 5px 5px 5px 5px;
+  border-color: black;
+  border: 7px solid black;
+  padding: 1% black;
 }
 
 .avatar-img{

@@ -20,10 +20,15 @@ p {
 
 .main-img {
   object-fit: cover; /*this makes the image in src fit to the size specified below*/
-  width: 20%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-  height: 35%;
+  width: 25%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 85%;
   margin: 1%;
-  padding: 0.5%;
+  /* border: 1px solid #CCCCCC; */
+  border-radius: 5px 5px 5px 5px;
+  border-color: black;
+  border: 7px solid black;
+  padding: 1% black;
+  transform: rotate(-20deg);
 }
 
 .avatar-img {
@@ -39,7 +44,10 @@ p {
   width: 10%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
   height: 10%;
   margin: 1%;
-  padding: 0.5%;
+  border-radius: 5px 5px 5px 5px;
+  border-color: black;
+  border: 7px solid black;
+  padding: 1% black;
 }
 
 div {
@@ -75,7 +83,13 @@ div {
 }
 
 .mat-card {
-  background-image: linear-gradient(#62B6C1, black);
+  background-image: linear-gradient(#62b6c1, black);
+}
+
+.mat-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .myTab {
