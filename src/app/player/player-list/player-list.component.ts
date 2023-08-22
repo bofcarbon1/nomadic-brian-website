@@ -84,17 +84,18 @@ export class PlayerListComponent implements OnInit {
         title: 'Anthony Richardson 2023 Colts QB',
       },
       {
-        image: '../../assets/images/stats/ryan_2022_pass_ratings_graph_img.svg',
+        image:
+          '../../assets/images/stats/2023/richardson_2023_pass_ratings_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/ryan_2022_pass_ratings_graph_img.svg',
-        title: 'Ryan 2022 Passer Rating',
+          '../../assets/images/stats/2023/richardson_2023_pass_ratings_graph_img.svg',
+        title: 'Richardson 2023 Passer Rating',
       },
       {
         image:
-          '../../assets/images/stats/wentz_2021_pass_ratings_graph_img.svg',
+          '../../assets/images/stats/2022/ryan_2022_pass_ratings_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/wentz_2021_pass_ratings_graph_img.svg',
-        title: 'Wentz 2021 Passer Rating',
+          '../../assets/images/stats/2022/ryan_2022_pass_ratings_graph_img.svg',
+        title: 'Ryan 2022 Passer Rating',
       },
     ];
   }

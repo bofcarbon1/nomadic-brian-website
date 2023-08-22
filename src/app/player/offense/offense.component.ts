@@ -15,33 +15,33 @@ export class PlayerOffenseComponent implements OnInit {
     this.imageObject = [
       {
         image:
-          '../../assets/images/stats/player_off_2022_runs_stats_graph_img.svg',
+          '../../assets/images/stats/2023/player_off_2023_runs_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_off_2022_runs_stats_graph_img.svg',
-        title: 'Colts 2022 Top Rushers',
+          '../../assets/images/stats/2023/player_off_2023_runs_stats_graph_img.svg',
+        title: 'Colts 2023 Top Rushers',
       },
       {
         image:
-          '../../assets/images/stats/player_off_2022_recs_stats_graph_img.svg',
+          '../../assets/images/stats/2023/player_off_2023_recs_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_off_2022_recs_stats_graph_img.svg',
-        title: 'Colts 2022 Top Receivers',
+          '../../assets/images/stats/2023/player_off_2023_recs_stats_graph_img.svg',
+        title: 'Colts 2023 Top Receivers',
       },
     ];
     this.imageObject2 = [
       {
         image:
-          '../../assets/images/stats/player_off_2021_runs_stats_graph_img.svg',
+          '../../assets/images/stats/2022/player_off_2022_runs_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_off_2021_runs_stats_graph_img.svg',
-        title: 'Colts 2021 Top Rushers',
+          '../../assets/images/stats/2022/player_off_2022_runs_stats_graph_img.svg',
+        title: 'Colts 2022 Top Rushers',
       },
       {
         image:
-          '../../assets/images/stats/player_off_2021_recs_stats_graph_img.svg',
+          '../../assets/images/stats/2022/player_off_2022_recs_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_off_2021_recs_stats_graph_img.svg',
-        title: 'Colts 2021 Top Receivers',
+          '../../assets/images/stats/2022/player_off_2022_recs_stats_graph_img.svg',
+        title: 'Colts 2022 Top Receivers',
       },
     ];
   }

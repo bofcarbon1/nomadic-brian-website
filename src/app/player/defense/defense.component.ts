@@ -15,47 +15,47 @@ export class PlayerDefenseComponent implements OnInit {
     this.imageObject = [
       {
         image:
-          '../../assets/images/stats/player_def_2022_sacks_stats_graph_img.svg',
+          '../../assets/images/stats/2023/player_def_2023_sacks_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_def_2022_sacks_stats_graph_img.svg',
-        title: 'Colts 2022 Top Sackers',
+          '../../assets/images/stats/2023/player_def_2023_sacks_stats_graph_img.svg',
+        title: 'Colts 2023 Top Sackers',
       },
       {
         image:
-          '../../assets/images/stats/player_def_2022_tackles_stats_graph_img.svg',
+          '../../assets/images/stats/2023/player_def_2023_tackles_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_def_2022_tackles_stats_graph_img.svg',
-        title: 'Colts 2022 Top Tacklers',
+          '../../assets/images/stats/2023/player_def_2023_tackles_stats_graph_img.svg',
+        title: 'Colts 2023 Top Tacklers',
       },
       {
         image:
-          '../../assets/images/stats/player_def_2022_ints_stats_graph_img.svg',
+          '../../assets/images/stats/2023/player_def_2023_ints_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_def_2022_ints_stats_graph_img.svg',
-        title: 'Colts 2022 Top Interceptors',
+          '../../assets/images/stats/2023/player_def_2023_ints_stats_graph_img.svg',
+        title: 'Colts 2023 Top Interceptors',
       },
     ];
     this.imageObject2 = [
       {
         image:
-          '../../assets/images/stats/player_def_2021_sacks_stats_graph_img.svg',
+          '../../assets/images/stats/2022/player_def_2022_sacks_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_def_2021_sacks_stats_graph_img.svg',
-        title: 'Colts 2021 Top Sackers',
+          '../../assets/images/stats/2022/player_def_2022_sacks_stats_graph_img.svg',
+        title: 'Colts 2022 Top Sackers',
       },
       {
         image:
-          '../../assets/images/stats/player_def_2021_tackles_stats_graph_img.svg',
+          '../../assets/images/stats/2022/player_def_2022_tackles_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_def_2021_tackles_stats_graph_img.svg',
-        title: 'Colts 2021 Top Tacklers',
+          '../../assets/images/stats/2022/player_def_2022_tackles_stats_graph_img.svg',
+        title: 'Colts 2022 Top Tacklers',
       },
       {
         image:
-          '../../assets/images/stats/player_def_2021_ints_stats_graph_img.svg',
+          '../../assets/images/stats/2022/player_def_2022_ints_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/player_def_2021_ints_stats_graph_img.svg',
-        title: 'Colts 2021 Top Interceptors',
+          '../../assets/images/stats/2022/player_def_2022_ints_stats_graph_img.svg',
+        title: 'Colts 2022 Top Interceptors',
       },
     ];
   }

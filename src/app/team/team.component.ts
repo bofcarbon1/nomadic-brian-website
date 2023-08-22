@@ -14,17 +14,17 @@ export class TeamComponent implements OnInit {
     this.imageObject = [
       {
         image:
-          '../../assets/images/stats/team_off_div_2022_pass_yds_bar_img.svg',
+          '../../assets/images/stats/2023/team_off_div_2023_pass_yds_bar_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_div_2022_pass_yds_bar_img.svg',
-        title: 'AFC South 2022 Team Passing Yards',
+          '../../assets/images/stats/2023/team_off_div_2023_pass_yds_bar_img.svg',
+        title: 'AFC South 2023 Team Passing Yards',
       },
       {
         image:
-          '../../assets/images/stats/team_off_div_2022_rush_yds_bar_img.svg',
+          '../../assets/images/stats/2023/team_off_div_2023_rush_yds_bar_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_div_2022_rush_yds_bar_img.svg',
-        title: 'AFC South 2022 Team Rushing Yards',
+          '../../assets/images/stats/2023/team_off_div_2023_rush_yds_bar_img.svg',
+        title: 'AFC South 2023 Team Rushing Yards',
       },
     ];
   }

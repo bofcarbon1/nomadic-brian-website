@@ -16,47 +16,47 @@ export class OffenseComponent implements OnInit {
     this.imageObject = [
       {
         image:
-          '../../assets/images/stats/team_off_2022_run_stats_graph_img.svg',
+          '../../assets/images/stats/2023/team_off_2023_run_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_2022_run_stats_graph_img.svg',
-        title: 'Colts 2022 Team Rushing',
+          '../../assets/images/stats/2023/team_off_2023_run_stats_graph_img.svg',
+        title: 'Colts 2023 Team Rushing',
       },
       {
         image:
-          '../../assets/images/stats/team_off_2022_pass_stats_graph_img.svg',
+          '../../assets/images/stats/2023/team_off_2023_pass_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_2022_pass_stats_graph_img.svg',
-        title: 'Colts 2022 Team Passing',
+          '../../assets/images/stats/2023/team_off_2023_pass_stats_graph_img.svg',
+        title: 'Colts 2023 Team Passing',
       },
       {
         image:
-          '../../assets/images/stats/team_off_2022_fdowns_stats_graph_img.svg',
+          '../../assets/images/stats/2023/team_off_2023_fdowns_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_2022_fdowns_stats_graph_img.svg',
-        title: 'Colts 2022 Team First Downs',
+          '../../assets/images/stats/2023/team_off_2023_fdowns_stats_graph_img.svg',
+        title: 'Colts 2023 Team First Downs',
       },
     ];
     this.imageObject2 = [
       {
         image:
-          '../../assets/images/stats/team_off_2021_run_stats_graph_img.svg',
+          '../../assets/images/stats/2022/team_off_2022_run_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_2021_run_stats_graph_img.svg',
-        title: 'Colts 2021 Team Rushing',
+          '../../assets/images/stats/2022/team_off_2022_run_stats_graph_img.svg',
+        title: 'Colts 2022 Team Rushing',
       },
       {
         image:
-          '../../assets/images/stats/team_off_2021_pass_stats_graph_img.svg',
+          '../../assets/images/stats/2022/team_off_2022_pass_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_2021_pass_stats_graph_img.svg',
-        title: 'Colts 2021 Team Passing',
+          '../../assets/images/stats/2022/team_off_2022_pass_stats_graph_img.svg',
+        title: 'Colts 2022 Team Passing',
       },
       {
         image:
-          '../../assets/images/stats/team_off_2021_fdowns_stats_graph_img.svg',
+          '../../assets/images/stats/2022/team_off_2022_fdowns_stats_graph_img.svg',
         thumbImage:
-          '../../assets/images/stats/team_off_2021_fdowns_stats_graph_img.svg',
-        title: 'Colts 2021 Team First Downs',
+          '../../assets/images/stats/2022/team_off_2022_fdowns_stats_graph_img.svg',
+        title: 'Colts 2022 Team First Downs',
       },
     ];
   }
