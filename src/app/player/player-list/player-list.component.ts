@@ -13,15 +13,15 @@ export class PlayerListComponent implements OnInit {
   players = [
     {
       id: '0',
-      name: 'Dayo Odeyingbo',
-      position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/O/OdeyDa00.htm',
+      name: 'Kylen Granson',
+      position: 'TE',
+      plink: 'https://www.pro-football-reference.com/players/G/GranKy00.htm',
     },
     {
       id: '1',
-      name: 'Zaire Franklin',
-      position: 'LB',
-      plink: 'https://www.pro-football-reference.com/players/F/FranZa00.htm',
+      name: 'Andrew Ogletree',
+      position: 'TE',
+      plink: 'https://www.pro-football-reference.com/players/O/OgleAn00.htm',
     },
     {
       id: '2',
@@ -33,15 +33,15 @@ export class PlayerListComponent implements OnInit {
   tops = [
     {
       id: '0',
-      name: 'Jonathan Taylor',
+      name: 'Zaire Franklin',
       position: 'RB',
-      plink: 'https://www.pro-football-reference.com/players/T/TaylJo02.htm',
+      plink: 'https://www.pro-football-reference.com/players/F/FranZa00.htm',
     },
     {
       id: '1',
-      name: 'Yannick Ngakoue',
+      name: 'Kwitty Paye',
       position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/N/NgakYa00.htm',
+      plink: 'https://www.pro-football-reference.com/players/P/PayeKw00.htm',
     },
     {
       id: '2',
@@ -56,20 +56,20 @@ export class PlayerListComponent implements OnInit {
       name: 'Anthony Richardson',
       position: 'QB',
       plink:
-        'https://www.sports-reference.com/cfb/players/anthony-richardson-2.html',
+        'https://www.pro-football-reference.com/players/R/RichAn03.htm',
     },
     {
       id: '1',
       name: 'Josh Downs',
       position: 'WR',
-      plink: 'https://www.sports-reference.com/cfb/players/josh-downs-2.html',
+      plink: 'https://www.pro-football-reference.com/players/D/DownJo00.htm',
     },
     {
       id: '2',
       name: 'Julius Brents',
       position: 'CB',
       plink:
-        'https://www.sports-reference.com/cfb/players/julius-brents-1.html',
+        'https://www.pro-football-reference.com/players/B/BrenJu00.htm',
     },
   ];
   displayedColumns = ['Name', 'Position', 'Plink'];
@@ -79,8 +79,8 @@ export class PlayerListComponent implements OnInit {
   ngOnInit(): void {
     this.imageObject = [
       {
-        image: '../../assets/images/ARichardson.jpg',
-        thumbImage: '../../assets/images/ARichardson.jpg',
+        image: '../../assets/images/arichardson2.jpg',
+        thumbImage: '../../assets/images/arichardson2.jpg',
         title: 'Anthony Richardson 2023 Colts QB',
       },
       {

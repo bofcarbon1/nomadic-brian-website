@@ -118,7 +118,7 @@ export class ProjectComponent implements OnInit {
         id: '28',
         name: 'My Apps',
         year: '2023',
-        note: 'Converting Colts By Numbers Python to FastAPI & microservices using Python, Kafka/RabbitMQ, Postgre SQL, OpenAPI',
+        note: 'Converting Colts By Numbers Python to FastAPI & microservices using Python, Kafka, MongoDB, OpenAPI, Angular v15, React v18',
         type: 'web',
       },
       {
