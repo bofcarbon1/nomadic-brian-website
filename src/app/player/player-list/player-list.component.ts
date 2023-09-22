@@ -13,15 +13,15 @@ export class PlayerListComponent implements OnInit {
   players = [
     {
       id: '0',
-      name: 'Kylen Granson',
-      position: 'TE',
-      plink: 'https://www.pro-football-reference.com/players/G/GranKy00.htm',
+      name: 'Zack Moss',
+      position: 'RB',
+      plink: 'https://www.pro-football-reference.com/players/M/MossZa00.htm',
     },
     {
       id: '1',
-      name: 'Andrew Ogletree',
-      position: 'TE',
-      plink: 'https://www.pro-football-reference.com/players/O/OgleAn00.htm',
+      name: 'DeForest Buckner',
+      position: 'DT',
+      plink: 'https://www.pro-football-reference.com/players/B/BuckDe00.htm',
     },
     {
       id: '2',
