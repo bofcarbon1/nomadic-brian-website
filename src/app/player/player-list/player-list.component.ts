@@ -25,9 +25,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Grover Stewart',
-      position: 'CB',
-      plink: 'https://www.pro-football-reference.com/players/S/StewGr00.htm',
+      name: 'Matt Gay',
+      position: 'K',
+      plink: 'https://www.pro-football-reference.com/players/G/GayxMa00.htm',
     },
   ];
   tops = [
