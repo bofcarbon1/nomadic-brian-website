@@ -13,21 +13,21 @@ export class PlayerListComponent implements OnInit {
   players = [
     {
       id: '0',
-      name: 'Zack Moss',
-      position: 'RB',
-      plink: 'https://www.pro-football-reference.com/players/M/MossZa00.htm',
+      name: 'Julian Blackmon',
+      position: 'S',
+      plink: 'https://www.pro-football-reference.com/players/B/BlacJu01.htm',
     },
     {
       id: '1',
-      name: 'Samson Ebukam',
-      position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/E/EbukSa00.htm',
+      name: 'Jonathan Taylor',
+      position: 'RB',
+      plink: 'https://www.pro-football-reference.com/players/T/TaylJo02.htm',
     },
     {
       id: '2',
-      name: 'Matt Gay',
-      position: 'K',
-      plink: 'https://www.pro-football-reference.com/players/G/GayxMa00.htm',
+      name: 'Kenny Moore',
+      position: 'CB',
+      plink: 'https://www.pro-football-reference.com/players/M/MoorKe03.htm',
     },
   ];
   tops = [
@@ -39,9 +39,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Kwitty Paye',
+      name: 'Samson Ebukam',
       position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/P/PayeKw00.htm',
+      plink: 'https://www.pro-football-reference.com/players/E/EbukSa00.htm',
     },
     {
       id: '2',
