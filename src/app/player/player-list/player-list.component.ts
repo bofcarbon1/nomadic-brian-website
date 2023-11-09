@@ -39,9 +39,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Samson Ebukam',
-      position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/E/EbukSa00.htm',
+      name: 'DeForest Buckner',
+      position: 'DT',
+      plink: 'https://www.pro-football-reference.com/players/B/BuckDe00.htm',
     },
     {
       id: '2',
