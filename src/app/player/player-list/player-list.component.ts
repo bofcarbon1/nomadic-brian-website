@@ -19,9 +19,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Jonathan Taylor',
-      position: 'RB',
-      plink: 'https://www.pro-football-reference.com/players/T/TaylJo02.htm',
+      name: 'DeForest Buckner',
+      position: 'DT',
+      plink: 'https://www.pro-football-reference.com/players/B/BuckDe00.htm',
     },
     {
       id: '2',
@@ -39,9 +39,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'DeForest Buckner',
-      position: 'DT',
-      plink: 'https://www.pro-football-reference.com/players/B/BuckDe00.htm',
+      name: 'Dayo Odeyingbo',
+      position: 'DE',
+      plink: 'https://www.pro-football-reference.com/players/O/OdeyDa00.htm',
     },
     {
       id: '2',
