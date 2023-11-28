@@ -53,10 +53,9 @@ export class PlayerListComponent implements OnInit {
   rookies = [
     {
       id: '0',
-      name: 'Anthony Richardson',
-      position: 'QB',
-      plink:
-        'https://www.pro-football-reference.com/players/R/RichAn03.htm',
+      name: 'Will Mallory',
+      position: 'TE',
+      plink: 'https://www.pro-football-reference.com/players/M/MallWi00.htm',
     },
     {
       id: '1',
@@ -66,10 +65,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Julius Brents',
-      position: 'CB',
-      plink:
-        'https://www.pro-football-reference.com/players/B/BrenJu00.htm',
+      name: 'Blake Freeland',
+      position: 'OL',
+      plink: 'https://www.pro-football-reference.com/players/F/FreeBl00.htm',
     },
   ];
   displayedColumns = ['Name', 'Position', 'Plink'];
