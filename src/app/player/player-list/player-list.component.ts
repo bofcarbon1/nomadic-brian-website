@@ -39,9 +39,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Dayo Odeyingbo',
+      name: 'Sam Ebukam',
       position: 'DE',
-      plink: 'https://www.pro-football-reference.com/players/O/OdeyDa00.htm',
+      plink: 'https://www.pro-football-reference.com/players/E/EbukSa00.htm',
     },
     {
       id: '2',
