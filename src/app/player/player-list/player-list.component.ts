@@ -13,9 +13,9 @@ export class PlayerListComponent implements OnInit {
   players = [
     {
       id: '0',
-      name: 'Julian Blackmon',
-      position: 'S',
-      plink: 'https://www.pro-football-reference.com/players/B/BlacJu01.htm',
+      name: 'E.J. Speed',
+      position: 'LB',
+      plink: 'https://www.pro-football-reference.com/players/S/SpeeEJ00.htm',
     },
     {
       id: '1',
