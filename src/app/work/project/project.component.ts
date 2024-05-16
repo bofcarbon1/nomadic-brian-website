@@ -128,6 +128,13 @@ export class ProjectComponent implements OnInit {
         note: 'eCommerce microservices using Java Spring Boot and AWS',
         type: 'web',
       },
+      {
+        id: '30',
+        name: 'Training & Development',
+        year: '2024',
+        note: 'AI Deep Learning using PyTorch, Python, sklearn, Mobile PWA with Ionic Angular/React/Vue and Android Capacitor',
+        type: 'ai',
+      },
     ]);
     this.projectParsed = JSON.parse(projectString);
     this.sortedData = this.projectParsed.slice();
