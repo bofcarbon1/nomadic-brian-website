@@ -2,7 +2,8 @@
   "name": "nomadic-brian-website",
   "version": "0.0.0",
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "mpm": "9.x"
   },
   "scripts": {
     "ng": "ng",
