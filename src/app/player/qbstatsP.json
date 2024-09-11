@@ -1,0 +1,53 @@
+[
+    {
+    "att": 28,
+    "cmpp": 77.45,
+    "tdp": 4.5,
+    "intp": 1.75,
+    "rate": 88.3,
+    "aya": 5.05,
+    "qbstat_name": "Richardson",
+    "qbstat_id": 0
+    },
+
+    {
+     "att": 32,
+     "cmpp": 99.31,
+     "tdp": 3.8,
+     "intp": 2.5,
+     "rate": 97.3,
+     "aya": 5.05,
+     "qbstat_name": "Lawrence",
+     "qbstat_id": 0
+    },
+    {
+      "att": 33,
+      "cmpp": 82.25,
+      "tdp": 3.5,
+      "intp": 1.5,
+      "rate": 98.5,
+      "aya": 4.75,
+      "qbstat_name": "Murray",
+      "qbstat_id": 0
+    },
+    {
+      "att": 30,
+      "cmpp": 94.35,
+      "tdp": 4.5,
+      "intp": 1.5,
+      "rate": 99.5,
+      "aya": 6.05,
+      "qbstat_name": "Jackson",
+      "qbstat_id": 0
+    },
+    {
+      "att": 30,
+      "cmpp": 85.71,
+      "tdp": 4.8,
+      "intp": 1.2,
+      "rate": 88.5,
+      "aya": 7.05,
+      "qbstat_name": "Levis",
+      "qbstat_id": 0
+    }
+]

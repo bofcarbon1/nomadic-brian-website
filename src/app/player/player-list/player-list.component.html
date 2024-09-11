@@ -32,7 +32,10 @@
             </mat-cell>
           </ng-container>
           <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+          <mat-row
+            *matRowDef="let row; columns: displayedColumns"
+            class="mat-row"
+          ></mat-row>
         </mat-table>
       </div>
       <div class="contaner">
@@ -70,7 +73,10 @@
             </mat-cell>
           </ng-container>
           <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+          <mat-row
+            *matRowDef="let row; columns: displayedColumns"
+            class="mat-row"
+          ></mat-row>
         </mat-table>
       </div>
       <div class="container">
@@ -110,7 +116,10 @@
             </mat-cell>
           </ng-container>
           <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+          <mat-row
+            *matRowDef="let row; columns: displayedColumns"
+            class="mat-row"
+          ></mat-row>
         </mat-table>
       </div>
       <!-- Insert image here -->
@@ -130,14 +139,18 @@
         </mat-card>
       </div>
     </div>
+  </div>
+</div>
+<div flex layout="row">
+  <div layout="column" flex>
     <div class="box2">
       <div class="container">
         <h3>&nbsp;&nbsp;Anthony's Playground</h3>
         <p>
-          5... QB Anthony Richardson begins his journey to the 2024 season.
-          <br />What is his ceiling? We will find out soon.
+          5... QB Anthony Richardson starts the season with a 101.2 rating
+          <br />Brings an exciting new look to the Colts this year.
         </p>
-        <ng-image-slider
+        <!-- <ng-image-slider
           #nav
           [images]="imageObject"
           [imageSize]="{ width: '25%', height: 200 }"
@@ -145,74 +158,279 @@
           [autoSlide]="1"
           slideImage="1"
         >
-        </ng-image-slider>
+        </ng-image-slider> -->
+        <mat-card
+        flex="100"
+        layout-margin
+        layout-padding
+        layout-align="center stretch"
+      >
+        <img
+          class="main-img"
+          mat-card-image
+          style="width: 550px; height: 300px"
+          src="../../assets/images/arichardson2.jpg"
+        />
+      </mat-card>
+      </div>
+      <div class="container">
+        <!-- Here we will add a tab group and tab for the YTD stats -->
+        <h3>&nbsp;&nbsp;QB Comparison</h3>
+        <mat-tab-group headerPosition="below">
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <span style="color: black">Current</span>
+            </ng-template>
+            <mat-tab-header>Year To Date</mat-tab-header>
+            <mat-table
+              style="width: 600px"
+              [dataSource]="qbstats"
+              class="mat-elevation-z8"
+              (matSortChange)="sortData($event)"
+              matSort
+              matSortActive="CMPP"
+              matSortDirection="desc"
+              matSortDisableClear
+            >
+              <ng-container matColumnDef="QB">
+                <mat-header-cell *matHeaderCellDef>QB</mat-header-cell>
+                <mat-cell
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.qbstat_name }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="Att">
+                <mat-header-cell *matHeaderCellDef>Att</mat-header-cell>
+                <mat-cell
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.att }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="CMPP">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >CMPP</mat-header-cell
+                >
+                <mat-cell
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                >
+                  {{ qbstat.cmpp }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="TDP">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >TDP</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.tdp }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="INTP">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >INTP</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.intp }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="Rate">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >Rate</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.rate }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="AYA">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >AYA</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                >
+                  {{ qbstat.aya }}</mat-cell
+                >
+              </ng-container>
+
+              <mat-header-row
+                *matHeaderRowDef="displayedColumnsQBStats"
+              ></mat-header-row>
+              <mat-row
+                *matRowDef="let row; columns: displayedColumnsQBStats"
+              ></mat-row>
+            </mat-table>
+          </mat-tab>
+          <!-- Here we will a second tab for the projected table -->
+          <mat-tab>
+            <ng-template mat-tab-label>
+              <span style="color: black">Next Game</span>
+            </ng-template>
+            <mat-tab-header>Next Game Projections</mat-tab-header>
+
+            <mat-table
+              style="width: 600px"
+              [dataSource]="qbstatsP"
+              class="mat-elevation-z8"
+              (matSortChange)="sortPData($event)"
+              matSort
+              matSortActive="CMPP"
+              matSortDirection="desc"
+              matSortDisableClear
+            >
+              <ng-container matColumnDef="QB">
+                <mat-header-cell *matHeaderCellDef>QB</mat-header-cell>
+                <mat-cell
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.qbstat_name }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="Att">
+                <mat-header-cell *matHeaderCellDef>Att</mat-header-cell>
+                <mat-cell
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.att }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="CMPP">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >CMPP</mat-header-cell
+                >
+                <mat-cell
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                >
+                  {{ qbstat.cmpp }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="TDP">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >TDP</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.tdp }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="INTP">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >INTP</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.intp }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="Rate">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >Rate</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                  >{{ qbstat.rate }}</mat-cell
+                >
+              </ng-container>
+
+              <ng-container matColumnDef="AYA">
+                <mat-header-cell *matHeaderCellDef mat-sort-header
+                  >AYA</mat-header-cell
+                >
+                <mat-cell
+                  class="duration-cell"
+                  *matCellDef="let qbstat"
+                  [ngStyle]="{
+                    'background-color': getBackgroundColor(qbstat)
+                  }"
+                >
+                  {{ qbstat.aya }}</mat-cell
+                >
+              </ng-container>
+
+              <mat-header-row
+                *matHeaderRowDef="displayedColumnsQBStats"
+              ></mat-header-row>
+              <mat-row
+                *matRowDef="let row; columns: displayedColumnsQBStats"
+              ></mat-row>
+            </mat-table>
+          </mat-tab>
+        </mat-tab-group>
       </div>
       <div class="container">
         <h3>&nbsp;&nbsp;Players Table</h3>
         <p>
-          Welcome Colts 2024 Rookie Class!
+          Game 1 Player Highlights
           <br />
           <br />
-          15th... pick: Laiatu Latu DE UCLA.  Latu recorded 10 1/2 sacks and 12 1/2
-          <br />
-          tackles for a loss in 2022 and 13 sacks and 21 1/2 tackles for a loss in 2023.
+          5... is for Anthony Richardson with 212 yds passing and 56 yds rushing.
           <br />
           <br />
-          52nd... pick: Adonai Mitchell WR Texas. Mitchell's 11 touchdowns were tied
-          <br />
-          for ninth-most among Power 5 wide receivers in 2023.
+          125... For WR Alec Pierce. Off to a great start.
           <br />
           <br />
-          79th... pick: Matt Concalves OT Pitt. Pro Football Focus pass block grade of
+          99... That's DeForest Buckner with 1.5 sacks and 2 QB hits.
           <br />
-          76.2 in 2022 and 77.3 in 2023.
-          <br />
-          <br />
-          117th... pick: Tanor Bortolini G Wisconson.  He earned a PFF run block grade
-          <br />
-          of 80.3 in 2023.
-          <br />
-          <br />
-          142nd... pick: Anthony Gould WR Oregon State. From 2022-2023, Gould returned
-          <br />
-          22 punts for 369 yards
-          <br />
-          (16.8 yards/return), and was named a first-team All-American as a punt
-          <br />
-          returner in 2022.
-          <br />
-          <br />
-          151st... pick: Jaylon Carlies LB Missouri. appeared in 48 games (40 starts)
-          <br />
-          for Missouri from 2020-2023, totaling 221 tackles, 11.5 tackles for a loss,
-          <br />
-          nine interceptions, eight pass break-ups, three forced fumbles and three sacks.
-          <br />
-          <br />
-          164th... pick: Jaylin Simpson CB Auburn. appeared in 47 games (23 starts) for
-          <br />
-          Auburn from 2019-2023, where he totaled 116 tackles, seven interceptions, 14
-          <br />
-          pass break-ups and four tackles for a loss.
-          <br />
-          <br />
-          201st... pick: Micah Abraham CB Marshall. Ten of Abraham's 12 interceptions
-          <br />
-          came in the last two seasons, and he earned First-Team All-Sun Belt Conference
-          <br />
-          honors in both 2022 and 2023.
-          <br />
-          <br />
-          234th... pick: Jonah Lalau DT Oklahoma. Laulu spent his college career
-          <br />
-          at Hawaii (2018-2021) and Oklahoma (2022-2023) and totaled 102 tackles,
-          <br />
-          10.5 sacks and 95 total pressures
-          <br />
-
         </p>
       </div>
     </div>
-    <div class="box3">All rights reserved Brian Quinn</div>
   </div>
 </div>
+
+<div class="box3">All rights reserved Brian Quinn</div>
