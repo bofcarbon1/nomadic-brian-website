@@ -81,7 +81,7 @@ export class PlayerListComponent implements OnInit {
 
   // QBStats sortable table
   qbstats: QBStat[] = require('../../../assets/data/qbstats.json');
-  qbstatsP: QBStat[] = require('../../../assets/data/qbstatsP.json');
+  qbstatsP: QBStat[] = require('../../../assets/data/qbstatsp.json');
   //public isProjected: Boolean = false;
   displayedColumnsQBStats = ['QB', 'Att', 'CMPP', 'TDP', 'INTP', 'Rate', 'AYA'];
 
@@ -100,21 +100,21 @@ export class PlayerListComponent implements OnInit {
   sortData(sort: Sort) {
     //console.log('sortData: sort:', sort);
     //console.log('isProjected: ', isProjected);
-    const  dataAsc = this.qbstats.slice();
-    const  dataDesc = this.qbstats.slice();
+    const dataAsc = this.qbstats.slice();
+    const dataDesc = this.qbstats.slice();
 
     if (sort.active == 'CMPP') {
       if (sort.direction === 'asc') {
-          this.sortedDataCMPP = dataAsc;
+        this.sortedDataCMPP = dataAsc;
       } else {
-          this.sortedDataCMPP = dataDesc;
+        this.sortedDataCMPP = dataDesc;
       }
 
       this.qbstats = this.sortedDataCMPP;
 
       this.sortedDataCMPP = dataAsc.sort((a: any, b: any) => {
-          return a.cmpp - b.cmpp;
-        });
+        return a.cmpp - b.cmpp;
+      });
 
       this.sortedDataCMPP = dataDesc
         .sort((a: any, b: any) => {
@@ -200,25 +200,24 @@ export class PlayerListComponent implements OnInit {
     }
   }
 
-
   sortPData(sort: Sort) {
     //console.log('sortData: sort:', sort);
     //console.log('isProjected: ', isProjected);
-    const  dataAsc = this.qbstatsP.slice();
-    const  dataDesc = this.qbstatsP.slice();
+    const dataAsc = this.qbstatsP.slice();
+    const dataDesc = this.qbstatsP.slice();
 
     if (sort.active == 'CMPP') {
       if (sort.direction === 'asc') {
-          this.sortedDataCMPP = dataAsc;
+        this.sortedDataCMPP = dataAsc;
       } else {
-          this.sortedDataCMPP = dataDesc;
+        this.sortedDataCMPP = dataDesc;
       }
 
       this.qbstatsP = this.sortedDataCMPP;
 
       this.sortedDataCMPP = dataAsc.sort((a: any, b: any) => {
-          return a.cmpp - b.cmpp;
-        });
+        return a.cmpp - b.cmpp;
+      });
 
       this.sortedDataCMPP = dataDesc
         .sort((a: any, b: any) => {
