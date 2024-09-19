@@ -48,9 +48,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Ashton Dulan',
-      position: 'WR',
-      plink: 'https://www.pro-football-reference.com/players/D/DuliAs00.htm',
+      name: 'Jonathan Taylor',
+      position: 'RB',
+      plink: 'https://www.pro-football-reference.com/players/T/TaylJo02.htm',
     },
   ];
   rookies = [
