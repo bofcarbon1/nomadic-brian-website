@@ -2,26 +2,26 @@
     {
       "qb_name": "Lawrence",
       "cat_no": 1,
-      "rank_value": 2
+      "rank_value": 6
     },
     {
       "qb_name": "Jackson",
       "cat_no": 1,
-      "rank_value": 16
+      "rank_value": 8
     },
     {
       "qb_name": "Levis",
       "cat_no": 1,
-      "rank_value": 26
+      "rank_value": 12
     },
     {
       "qb_name": "Murray",
       "cat_no": 1,
-      "rank_value": 21
+      "rank_value": 31
     },
     {
       "qb_name": "Richardson",
       "cat_no": 1,
-      "rank_value": 11
+      "rank_value": 5
     }
 ]

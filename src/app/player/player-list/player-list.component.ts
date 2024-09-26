@@ -28,9 +28,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '2',
-      name: 'Kenny Moore',
+      name: 'Jaylon Jones',
       position: 'CB',
-      plink: 'https://www.pro-football-reference.com/players/M/MoorKe03.htm',
+      plink: 'https://www.pro-football-reference.com/players/J/JoneJa13.htm',
     },
   ];
   tops = [
