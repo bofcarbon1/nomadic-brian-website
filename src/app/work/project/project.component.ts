@@ -132,7 +132,7 @@ export class ProjectComponent implements OnInit {
         id: '30',
         name: 'Training & Development',
         year: '2024',
-        note: 'AI Deep Learning using PyTorch, Python, sklearn, Mobile PWA with Ionic Angular/React/Vue and Android Capacitor',
+        note: 'CI/CD & Devops deep dive, AI Deep Learning using PyTorch, Python, sklearn, Mobile PWA with Ionic Angular/React/Vue and Android Capacitor',
         type: 'ai',
       },
     ]);
