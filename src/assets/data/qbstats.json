@@ -1,6 +1,6 @@
 [
     {
-        "qbstat_id": 654,
+        "qbstat_id": 659,
         "att": 77,
         "cmpp": 50.65,
         "tdp": 3.9,
@@ -10,27 +10,27 @@
         "qbstat_name": "Richardson"
     },
     {
-        "qbstat_id": 655,
-        "att": 108,
-        "cmpp": 66.67,
-        "tdp": 4.63,
-        "intp": 0.93,
-        "rate": 102.3,
-        "aya": 8.45,
+        "qbstat_id": 660,
+        "att": 150,
+        "cmpp": 65.33,
+        "tdp": 6.0,
+        "intp": 0.67,
+        "rate": 107.3,
+        "aya": 8.94,
         "qbstat_name": "Jackson"
     },
     {
-        "qbstat_id": 656,
-        "att": 108,
-        "cmpp": 69.44,
-        "tdp": 5.56,
-        "intp": 0.93,
-        "rate": 104.6,
-        "aya": 7.89,
+        "qbstat_id": 661,
+        "att": 138,
+        "cmpp": 68.12,
+        "tdp": 5.07,
+        "intp": 1.45,
+        "rate": 99.1,
+        "aya": 7.41,
         "qbstat_name": "Murray"
     },
     {
-        "qbstat_id": 657,
+        "qbstat_id": 662,
         "att": 98,
         "cmpp": 68.37,
         "tdp": 4.08,
@@ -40,13 +40,13 @@
         "qbstat_name": "Levis"
     },
     {
-        "qbstat_id": 658,
-        "att": 122,
-        "cmpp": 53.28,
-        "tdp": 3.28,
-        "intp": 0.82,
-        "rate": 78.9,
-        "aya": 6.26,
+        "qbstat_id": 663,
+        "att": 156,
+        "cmpp": 59.62,
+        "tdp": 3.85,
+        "intp": 1.28,
+        "rate": 88.6,
+        "aya": 7.24,
         "qbstat_name": "Lawrence"
     }
 ]
