@@ -22,15 +22,15 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'DeForest Buckner',
-      position: 'DT',
-      plink: 'https://www.pro-football-reference.com/players/B/BuckDe00.htm',
+      name: 'Michael Pittman',
+      position: 'WR',
+      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
     },
     {
       id: '2',
-      name: 'E.J. Speed',
-      position: 'OLB',
-      plink: 'https://www.pro-football-reference.com/players/S/SpeeEJ00.htm',
+      name: 'Grant Stuard',
+      position: 'LB',
+      plink: 'https://www.pro-football-reference.com/players/S/StuaGr00.htm',
     },
   ];
   tops = [
@@ -42,9 +42,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Nick Cross',
-      position: 'S',
-      plink: 'https://www.pro-football-reference.com/players/C/CrosNi00.htm',
+      name: 'Zaire Franklin',
+      position: 'LB',
+      plink: 'https://www.pro-football-reference.com/players/F/FranZa00.htm',
     },
     {
       id: '2',
@@ -65,14 +65,14 @@ export class PlayerListComponent implements OnInit {
       name: 'Adonai Mitchell',
       position: 'WR',
       plink:
-        'https://www.sports-reference.com/cfb/players/adonai-mitchell-1.html',
+        'https://www.pro-football-reference.com/players/M/MitcAd00.htm',
     },
     {
       id: '2',
-      name: 'Anthony Gould',
-      position: 'WR',
+      name: 'Tanor Bortolini',
+      position: 'C',
       plink:
-        'https://www.sports-reference.com/cfb/players/anthony-gould-1.html',
+        'https://www.pro-football-reference.com/players/B/BortTa00.htm',
     },
   ];
   displayedColumns = ['Name', 'Position', 'Plink'];
