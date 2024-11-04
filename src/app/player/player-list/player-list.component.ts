@@ -22,9 +22,9 @@ export class PlayerListComponent implements OnInit {
     },
     {
       id: '1',
-      name: 'Michael Pittman',
+      name: 'Josh Downs',
       position: 'WR',
-      plink: 'https://www.pro-football-reference.com/players/P/PittMi01.htm',
+      plink: 'https://www.pro-football-reference.com/players/D/DownJo00.htm',
     },
     {
       id: '2',
